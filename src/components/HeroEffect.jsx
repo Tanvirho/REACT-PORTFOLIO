@@ -16,7 +16,7 @@ import ParticleBackground from "./ParticleBackground";
 export const HeroEffect = () => {
   return (
     <div
-      className="heroImage relative h-[85%] w-full overflow-hidden bg-cover bg-center bg-no-repeat shadow-xl shadow-white/10 md:w-[70%] md:rounded-2xl"
+      className="heroImage relative h-[85%] w-[100%] overflow-hidden bg-cover bg-center bg-no-repeat shadow-xl shadow-white/10 md:w-[70%] md:rounded-2xl"
       style={{ backgroundImage: `URL(${heroImage})` }}
     >
       <div className="absolute inset-0 z-0">

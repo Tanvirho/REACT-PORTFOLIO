@@ -1,10 +1,12 @@
 import React from "react";
 import { Hero } from "./Hero";
+import { ProjectSection } from "./ProjectSection";
 
 const Main = () => {
   return (
-    <main className="container mx-auto h-[100vh-200px] md:h-screen rounded-2xl bg-[#20242f] shadow-2xl shadow-gray-900">
+    <main className="h-0 rounded-2xl bg-[#20242f] shadow-2xl shadow-gray-900 md:container md:mx-auto md:h-screen">
       <Hero />
+      <ProjectSection />
     </main>
   );
 };
