@@ -10,7 +10,7 @@ export default [
     subtitle:"(Portfolio)",
     description:"Designed and developed the site from scratch. Used a combo of themes and Figma to get the best results. Integrated contact form in the website using Netlify.",
     Frameworks: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP"],
-    link: ""
+    link: "https://tanvir-hossain-shifat.netlify.app/"
   },
   {
     id: 2,
@@ -18,8 +18,8 @@ export default [
     title: "Fashion Park",
     subtitle:"(E-commerce)",
     description:"Fashion Park is a modern, responsive, high-performance e-commerce frontend, specifically designed to showcase and sell fashionable T-shirts.",
-    Frameworks: [],
-    link: ""
+    Frameworks: ["HTML", "CSS", "JAVASCRIPT", "REACT","TAILWIND"],
+    link: "https://fashionpark.netlify.app/"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export default [
     title: "Country Flags Explorer",
     subtitle:"(Country Details)",
     description:"The Country Flags project homepage displays all countries, allowing users to search by name or filter by region. Clicking a flag leads to the country details page.",
-    Frameworks: [],
-    link: ""
+    Frameworks: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    link: "https://countriesresapi.netlify.app/"
   },
 ];

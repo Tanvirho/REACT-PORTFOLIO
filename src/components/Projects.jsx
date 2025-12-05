@@ -7,8 +7,16 @@ export const Projects = () => {
     <>
       {ProjectData.map((data) => {
         return (
-          <div key={data.id} className="mt-20">
-            <ProjectItem picture={data.picture} title={data.title} subtitle={data.subtitle} description={data.description} id={data.id} />
+          <div key={data.id} className="mt-20 md:p-3">
+            <ProjectItem
+              picture={data.picture}
+              title={data.title}
+              subtitle={data.subtitle}
+              description={data.description}
+              id={data.id}
+              link={data.link}
+              frameworks={data.Frameworks}
+            />
           </div>
         );
       })}
