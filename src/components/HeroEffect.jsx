@@ -34,7 +34,7 @@ export const HeroEffect = () => {
           <button className="group border-btn relative mt-15 mb-14">
             Latest Works
             <FontAwesomeIcon
-              className="absolute top-10 left-[45%] translate-y-1/2 text-2xl transition-all duration-300 ease-in-out group-hover:top-13 group-hover:text-[#00BCD4]"
+              className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl transition-all duration-300 ease-in-out group-hover:-bottom-8 group-hover:text-[#00BCD4]"
               icon={faArrowDown}
             />
           </button>
