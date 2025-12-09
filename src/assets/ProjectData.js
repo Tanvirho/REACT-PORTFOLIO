@@ -1,6 +1,7 @@
 import pic_1 from './11-1.png'
 import pic_2 from './22-1.png'
 import pic_3 from './33-1.png'
+import pic_4 from './44-1.png'
 
 export default [
   {
@@ -29,5 +30,14 @@ export default [
     description:"The Country Flags project homepage displays all countries, allowing users to search by name or filter by region. Clicking a flag leads to the country details page.",
     Frameworks: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
     link: "https://countriesresapi.netlify.app/"
+  },
+  {
+    id: 4,
+    picture: pic_4,
+    title: "Track Your Expense",
+    subtitle:"(Finance)",
+    description:"Simplify your financial life. This WebApp allows you to accurately track your monthly and yearly expenses, helping you stay focused on your financial goals.",
+    Frameworks: ["HTML", "CSS", "JAVASCRIPT", "REACT","TAILWIND"],
+    link: "https://working-with-forms-in-react.netlify.app/"
   },
 ];
