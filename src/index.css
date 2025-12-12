@@ -8,9 +8,8 @@ body {
   font-style: normal;
 }
 .border-btn {
-  @apply ml-6 block cursor-pointer rounded-full bg-gradient-to-r from-[#00BCD4] to-[#8E2DE2] px-8 py-2 text-[18px] font-medium transition-all duration-100 ease-in-out hover:scale-105 md:text-[22px];
+  @apply ml-6 block cursor-pointer rounded-full bg-linear-to-r from-[#00BCD4] to-[#8E2DE2] px-8 py-2 text-[18px] font-medium transition-all duration-100 ease-in-out hover:scale-105 md:text-[22px];
 }
 .icon-effect {
   @apply text-3xl hover:text-[#00BCD4];
 }
-
