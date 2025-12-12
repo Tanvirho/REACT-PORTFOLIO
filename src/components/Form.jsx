@@ -12,19 +12,19 @@ export const Form = () => {
         required
       />
       <input
-        className="mt-4 w-full rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
+        className="mt-8 w-full rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
         type="email"
         placeholder="Email"
         required
       />
       <input
-        className="mt-4 w-full rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
+        className="mt-8 w-full rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
         type="text"
         placeholder="Subject"
         required
       />
       <textarea
-        className="mt-4 max-h-30 min-h-30 w-full resize-none rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
+        className="mt-8 max-h-30 min-h-30 w-full resize-none rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
         placeholder="Message"
       ></textarea>
       <div className="text-center">

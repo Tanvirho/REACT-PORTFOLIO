@@ -31,7 +31,7 @@ export const ProjectItem = (props) => {
           </a>
         </div>
         <div className="mt-10 md:mt-0 md:w-[40%]">
-          <h1 className={`mt-5 text-3xl font-medium ${flexStyle}`}>
+          <h1 className={`mt-5 text-2xl md:text-3xl font-medium ${flexStyle}`}>
             {props.title}
           </h1>
           <h2 className={`mt-2 text-xl ${flexStyle}`}>{props.subtitle}</h2>
