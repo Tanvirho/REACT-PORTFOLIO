@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectData from "../assets/ProjectData";
+import { ProjectData } from "../assets/ProjectData";
 import { ProjectItem } from "./ProjectItem";
 
 export const Projects = () => {
