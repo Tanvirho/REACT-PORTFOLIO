@@ -1,3 +1,5 @@
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 export const Form = () => {
@@ -26,8 +28,8 @@ export const Form = () => {
         placeholder="Message"
       ></textarea>
       <div className="text-center">
-        <button className="mt-5 cursor-pointer rounded-full bg-linear-to-r from-[#00BCD4] to-[#8E2DE2] px-4 py-2 text-[18px] font-medium transition-all duration-300 ease-in-out hover:scale-108">
-          Send Message
+        <button className="mt-5 cursor-pointer rounded-full bg-linear-to-r from-[#00BCD4] to-[#8E2DE2] px-5 py-2 text-[18px] font-medium transition-all duration-300 ease-in-out hover:scale-108">
+          <FontAwesomeIcon icon={faPaperPlane} /> Send Message
         </button>
       </div>
     </form>
