@@ -7,7 +7,7 @@ export const Projects = () => {
     <>
       {ProjectData.map((data) => {
         return (
-          <div key={data.id} className="mt-20 md:p-3">
+          <div key={data.id} className="mt-5 md:mt-20 md:p-3">
             <ProjectItem
               picture={data.picture}
               title={data.title}

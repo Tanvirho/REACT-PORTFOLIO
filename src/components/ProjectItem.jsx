@@ -10,7 +10,7 @@ export const ProjectItem = (props) => {
   return (
     <>
       <div
-        className={`flex flex-col p-10 md:p-0 ${flexDirection} md:items-center md:justify-between`}
+        className={`flex flex-col p-6 md:p-0 ${flexDirection} md:items-center md:justify-between`}
       >
         <div
           className={`absolute left-1/2 z-10 hidden h-4 w-4 -translate-x-1/2 rounded-full border-3 md:block ${props.id % 2 === 0 ? "border-[#00BCD4]" : "border-[#fc815c]"} bg-white`}
@@ -21,7 +21,7 @@ export const ProjectItem = (props) => {
           ></div>
           <a href={props.link} target="_blank">
             <span
-              className={`gr absolute top-4 left-1/2 -translate-x-1/2 rounded-2xl p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:content-[""] ${props.id % 2 === 0 ? "bg-[#00BCD4] after:bg-[#00BCD4]" : "bg-[#fc815c] after:bg-[#fc815c]"}`}
+              className={`absolute top-4 left-1/2 -translate-x-1/2 rounded-2xl p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:content-[""] ${props.id % 2 === 0 ? "bg-[#00BCD4] after:bg-[#00BCD4]" : "bg-[#fc815c] after:bg-[#fc815c]"}`}
             >
               {props.title} <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </span>
@@ -38,10 +38,10 @@ export const ProjectItem = (props) => {
           </h1>
           <h2 className={`mt-2 text-xl ${flexStyle}`}>{props.subtitle}</h2>
           <p className="mt-4 text-[16px]">{props.description}</p>
-          <div className="flex flex-wrap space-x-3">
+          <div className="flex flex-wrap space-x-2 md:space-x-3">
             {props.frameworks.map((framework, i) => (
               <span
-                className="mt-3 rounded-full border border-gray-700 px-3 py-1 text-sm shadow-sm"
+                className="mt-3 rounded-full border border-gray-700 px-3 py-1 text-[10px] md:text-sm shadow-sm"
                 key={i}
               >
                 #{framework}

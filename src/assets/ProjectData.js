@@ -21,7 +21,7 @@ export const ProjectData = [
     subtitle: "(E-commerce)",
     description:
       "Fashion Park is a modern, responsive, high-performance e-commerce frontend, specifically designed to showcase and sell fashionable T-shirts.",
-    Frameworks: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND"],
+    Frameworks: ["HTML", "CSS", "REACT", "TAILWIND", "JAVASCRIPT"],
     link: "https://fashionpark.netlify.app/",
   },
   {
@@ -31,7 +31,7 @@ export const ProjectData = [
     subtitle: "(Country Details)",
     description:
       "The Country Flags project homepage displays all countries, allowing users to search by name or filter by region. Clicking a flag leads to the country details page.",
-    Frameworks: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
+    Frameworks: ["HTML", "CSS", "REACT", "JAVASCRIPT"],
     link: "https://countriesresapi.netlify.app/",
   },
   {
@@ -41,7 +41,7 @@ export const ProjectData = [
     subtitle: "(Finance)",
     description:
       "Simplify your financial life. This WebApp allows you to accurately track your monthly and yearly expenses, helping you stay focused on your financial goals.",
-    Frameworks: ["HTML", "CSS", "JAVASCRIPT", "REACT", "TAILWIND"],
+    Frameworks: ["HTML", "CSS", "REACT", "TAILWIND", "JAVASCRIPT"],
     link: "https://working-with-forms-in-react.netlify.app/",
   },
 ];
@@ -49,13 +49,13 @@ export const ProjectData = [
 export const skills = [
   "HTML",
   "CSS",
-  "JAVASCRIPT",
   "REACT",
+  "FIGMA",
+  "GIT",
+  "CANVA",
+  "GITHUB",
+  "TERMINAL",
   "TAILWIND",
   "BOOTSTRAP",
-  "GIT",
-  "GITHUB",
-  "CANVA",
-  "FIGMA",
-  "TERMINAL",
+  "JAVASCRIPT",
 ];
