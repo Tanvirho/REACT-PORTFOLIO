@@ -1,10 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Main from "./components/Main";
 
 const App = () => {
   return (
     <>
-      <Main />
+      <Suspense>
+        <Main />
+      </Suspense>
     </>
   );
 };

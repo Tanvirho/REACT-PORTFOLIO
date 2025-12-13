@@ -7,11 +7,12 @@ import {
   faReact,
   faSquareJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { createPortal } from "react-dom";
 
 const About = ({ isOpen, setIsOpen }) => {
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <>
       <div className="fixed inset-0 z-40 bg-white opacity-30"></div>
       <div className="fixed inset-10 z-50 flex flex-wrap items-center justify-center rounded-3xl border-2 border-[#8E2DE2] bg-[#191d26] p-10">
@@ -113,7 +114,8 @@ const About = ({ isOpen, setIsOpen }) => {
           </div>
         </div>
       </div>
-    </>
+    </>,
+    document.getElementById("portal"),
   );
 };
 
