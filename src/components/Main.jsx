@@ -2,7 +2,7 @@ import React from "react";
 import { Hero } from "./Hero";
 import { ProjectSection } from "./ProjectSection";
 import { Connect } from "./Connect";
-import { Footer } from "./Footer";
+import Footer from "./Footer";
 
 const Main = () => {
   return (

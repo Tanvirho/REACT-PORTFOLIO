@@ -6,7 +6,7 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons/faWhatsapp";
 import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons/faTelegramPlane";
 
-export const Footer = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -51,3 +51,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;
