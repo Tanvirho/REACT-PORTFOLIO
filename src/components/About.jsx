@@ -15,7 +15,7 @@ const About = ({ isOpen, setIsOpen }) => {
   return createPortal(
     <>
       <div className="fixed inset-0 z-40 bg-white opacity-30"></div>
-      <div className="fixed inset-10 z-50 flex flex-wrap items-center justify-center rounded-3xl border-2 border-[#8E2DE2] bg-[#191d26] p-10">
+      <div className="fixed h-auto inset-2 md:inset-10 z-50 flex flex-wrap items-center justify-center rounded-3xl border-2 border-[#8E2DE2] bg-[#191d26] p-5 md:p-10">
         <button
           type="button"
           className="absolute top-6 right-6 cursor-pointer rounded-full border border-[#8E2DE2] bg-gray-800 p-2 text-[#8E2DE2] shadow-sm backdrop-blur-md transition-all duration-300 hover:rotate-90 hover:bg-white/50"
@@ -39,12 +39,12 @@ const About = ({ isOpen, setIsOpen }) => {
         </button>
         <div className="relative flex flex-wrap items-center justify-center">
           <div className="flex flex-col items-center border-r-gray-600 md:w-[40%] md:border-r">
-            <div className="h-40 w-40 overflow-hidden rounded-full">
+            <div className="w-20 h-20 md:h-40 md:w-40 overflow-hidden rounded-full">
               <img src={image} alt="Hero.png" />
             </div>
-            <h1 className="mt-8 text-3xl font-medium">TANVIR HOSSAIN</h1>
-            <h2 className="text-[20px] text-[#00BCD4]">Frontend Developer</h2>
-            <ul className="mt-8 flex flex-wrap space-x-5 text-5xl">
+            <h1 className="mt-5 md:mt-8 text-2xl md:text-3xl font-medium">TANVIR HOSSAIN</h1>
+            <h2 className="text-[16px] md:text-[20px] text-[#00BCD4]">Frontend Developer</h2>
+            <ul className="mt-4 md:mt-8 flex flex-wrap justify-center space-x-3 md:space-x-5 text-3xl md:text-5xl">
               <li className="group relative cursor-pointer">
                 <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-amber-300 p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-amber-300 after:content-[""]'>
                   JavaScript
@@ -74,9 +74,8 @@ const About = ({ isOpen, setIsOpen }) => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="50"
-                  height="50"
                   viewBox="0 0 48 48"
+                  className="w-10 h-10 md:w-12 md:h-12"
                 >
                   <path
                     fill="#00acc1"
@@ -86,16 +85,16 @@ const About = ({ isOpen, setIsOpen }) => {
               </li>
             </ul>
           </div>
-          <div className="mt-12 md:mt-0 md:w-[60%] md:pl-10">
-            <h1 className="mb-6 text-2xl font-medium text-[#00BCD4]">
+          <div className="mt-2 md:mt-0 md:w-[60%] md:pl-10">
+            <h1 className="mb-1 md:mb-6 text-[18px] md:text-2xl font-medium text-[#00BCD4]">
               About Me
             </h1>
-            <p>
+            <p className="text-[14px] md:text-[16px]">
               I am a passionate Frontend Developer proficient in JavaScript,
               HTML, CSS, and modern frameworks, including React.js, Tailwind,
               and Bootstrap.
             </p>
-            <p className="mt-3">
+            <p className="mt-1 md:mt-3 text-[14px] md:text-[16px]">
               I specialize in building beautiful, highly responsive, and
               user-friendly web experiences, driven by a commitment to
               translating creative designs into pixel-perfect, high-performance
@@ -104,7 +103,7 @@ const About = ({ isOpen, setIsOpen }) => {
             <div className="flex flex-wrap space-x-3">
               {skills.map((framework, i) => (
                 <span
-                  className="mt-3 rounded-full border border-gray-700 px-3 py-1 text-sm shadow-sm"
+                  className="mt-2 md:mt-3 rounded-full border border-gray-700 px-3 py-1 text-[11px] md:text-sm shadow-sm"
                   key={i}
                 >
                   #{framework}
