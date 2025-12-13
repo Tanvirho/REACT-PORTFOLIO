@@ -1,10 +1,34 @@
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 
 export const Form = () => {
+  const [status, setStatus] = useState(null); // 'success' or 'error' or null
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    
+    // Create form data formatted for Netlify
+    const formData = new FormData(form);
+    const data = new URLSearchParams(formData).toString();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: data,
+    })
+      .then(() => {
+        setStatus("success");
+        form.reset(); // Clear the form
+      })
+      .catch((error) => {
+        console.error(error);
+        setStatus("error");
+      });
+  };
   return (
-    <form name="contact" method="POST" data-netlify="true" action="/success">
+    <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} >
       <input type="hidden" name="form-name" value="contact" />
       <input
         className="mt-4 w-full rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
@@ -39,6 +63,12 @@ export const Form = () => {
         >
           <FontAwesomeIcon icon={faPaperPlane} /> Send Message
         </button>
+        {status === "success" && (
+          <p className="mt-4 text-green-500 font-bold">Message sent successfully!</p>
+        )}
+        {status === "error" && (
+          <p className="mt-4 text-red-500 font-bold">Something went wrong. Please try again.</p>
+        )}
       </div>
     </form>
   );
