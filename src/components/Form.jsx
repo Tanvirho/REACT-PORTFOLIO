@@ -8,8 +8,7 @@ export const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    
-    // Create form data formatted for Netlify
+
     const formData = new FormData(form);
     const data = new URLSearchParams(formData).toString();
 
@@ -20,7 +19,7 @@ export const Form = () => {
     })
       .then(() => {
         setStatus("success");
-        form.reset(); // Clear the form
+        form.reset();
       })
       .catch((error) => {
         console.error(error);
@@ -28,7 +27,12 @@ export const Form = () => {
       });
   };
   return (
-    <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} >
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      onSubmit={handleSubmit}
+    >
       <input type="hidden" name="form-name" value="contact" />
       <input
         className="mt-4 w-full rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
@@ -64,10 +68,14 @@ export const Form = () => {
           <FontAwesomeIcon icon={faPaperPlane} /> Send Message
         </button>
         {status === "success" && (
-          <p className="mt-4 text-green-500 font-bold">Message sent successfully!</p>
+          <p className="mt-4 font-bold text-green-500">
+            Message sent successfully!
+          </p>
         )}
         {status === "error" && (
-          <p className="mt-4 text-red-500 font-bold">Something went wrong. Please try again.</p>
+          <p className="mt-4 font-bold text-red-500">
+            Something went wrong. Please try again.
+          </p>
         )}
       </div>
     </form>
