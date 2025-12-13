@@ -12,7 +12,9 @@ export const ProjectItem = (props) => {
       <div
         className={`flex flex-col p-10 md:p-0 ${flexDirection} md:items-center md:justify-between`}
       >
-        <div className={`absolute hidden md:block left-1/2 z-10 h-4 w-4 -translate-x-1/2 rounded-full border-3 ${props.id % 2 === 0 ? "border-[#00BCD4]" : "border-[#fc815c]"} bg-white`}></div>
+        <div
+          className={`absolute left-1/2 z-10 hidden h-4 w-4 -translate-x-1/2 rounded-full border-3 md:block ${props.id % 2 === 0 ? "border-[#00BCD4]" : "border-[#fc815c]"} bg-white`}
+        ></div>
         <div className="group relative mx-auto w-[90%] md:mx-0 md:w-[40%]">
           <div
             className={`absolute top-0 bottom-0 hidden w-0.5 rotate-90 md:block ${props.id % 2 === 0 ? "left-5 bg-[#00BCD4]" : "right-5 bg-[#fc815c]"}`}
@@ -31,7 +33,7 @@ export const ProjectItem = (props) => {
           </a>
         </div>
         <div className="mt-10 md:mt-0 md:w-[40%]">
-          <h1 className={`mt-5 text-2xl md:text-3xl font-medium ${flexStyle}`}>
+          <h1 className={`mt-5 text-2xl font-medium md:text-3xl ${flexStyle}`}>
             {props.title}
           </h1>
           <h2 className={`mt-2 text-xl ${flexStyle}`}>{props.subtitle}</h2>

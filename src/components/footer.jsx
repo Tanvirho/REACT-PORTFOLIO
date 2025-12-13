@@ -7,12 +7,13 @@ import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons/faTelegramPlane";
 
 export const Footer = () => {
-
-    const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col mt-10 items-center pb-15">
-      <p className="text-[14px]">© {currentYear} Tanvir Hossain. All Reserved.</p>
+    <footer className="mt-10 flex flex-col items-center pb-15">
+      <p className="text-[14px]">
+        © {currentYear} Tanvir Hossain. All Reserved.
+      </p>
       <img className="w-30" src={HeroLogo} alt="Logo" />
       <ul className="flex flex-wrap justify-center space-x-4 text-2xl text-[#00BCD4]">
         <li>

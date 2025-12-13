@@ -53,4 +53,9 @@ export const skills = [
   "REACT",
   "TAILWIND",
   "BOOTSTRAP",
+  "GIT",
+  "GITHUB",
+  "CANVA",
+  "FIGMA",
+  "TERMINAL",
 ];

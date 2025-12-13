@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImage from "../assets/Hero.png";
 import { Navbar } from "./Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +14,15 @@ import ParticleBackground from "./ParticleBackground";
 import About from "./About";
 
 export const HeroEffect = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
+  if (isScroll) {
+    window.scrollBy({
+      top: 800,
+      left: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <>
       <div
@@ -31,9 +40,14 @@ export const HeroEffect = () => {
           <h2 className="mr-5 ml-6 text-[20px] text-[#22aceb] md:text-[25px]">
             <i>Frontend Developer</i>
           </h2>
-          <button className="border-btn mt-10">About Me</button>
+          <button className="border-btn mt-10" onClick={() => setIsOpen(true)}>
+            About Me
+          </button>
           <div className="mt-25 flex justify-center">
-            <button className="group border-btn relative mt-15 mb-14">
+            <button
+              className="group border-btn relative mt-15 mb-14"
+              onClick={() => setIsScroll(true)}
+            >
               Latest Works
               <FontAwesomeIcon
                 className="absolute -bottom-5 left-1/2 -translate-x-1/2 text-2xl transition-all duration-300 ease-in-out group-hover:-bottom-8 group-hover:text-[#00BCD4]"
@@ -78,7 +92,7 @@ export const HeroEffect = () => {
           </ul>
         </div>
       </div>
-      <About />
+      <About isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };

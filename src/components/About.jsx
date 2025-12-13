@@ -8,27 +8,34 @@ import {
   faSquareJs,
 } from "@fortawesome/free-brands-svg-icons";
 
-const About = () => {
+const About = ({ isOpen, setIsOpen }) => {
+  if (!isOpen) return null;
+
   return (
     <>
       <div className="fixed inset-0 z-40 bg-white opacity-30"></div>
-      <div className="fixed inset-15 z-50 flex flex-wrap items-center justify-center rounded-3xl border-2 border-[#8E2DE2] bg-[#191d26] p-10">
-<button
-  type="button"
-  className="absolute top-6 right-6 p-2 bg-gray-800 backdrop-blur-md border border-[#8E2DE2] cursor-pointer text-[#8E2DE2] rounded-full hover:bg-white/50 transition-all duration-300 shadow-sm hover:rotate-90"
-  aria-label="Close"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={2.5}
-    stroke="currentColor"
-    className="w-5 h-5"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-  </svg>
-</button>
+      <div className="fixed inset-10 z-50 flex flex-wrap items-center justify-center rounded-3xl border-2 border-[#8E2DE2] bg-[#191d26] p-10">
+        <button
+          type="button"
+          className="absolute top-6 right-6 cursor-pointer rounded-full border border-[#8E2DE2] bg-gray-800 p-2 text-[#8E2DE2] shadow-sm backdrop-blur-md transition-all duration-300 hover:rotate-90 hover:bg-white/50"
+          aria-label="Close"
+          onClick={() => setIsOpen(false)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2.5}
+            stroke="currentColor"
+            className="h-5 w-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
         <div className="relative flex flex-wrap items-center justify-center">
           <div className="flex flex-col items-center border-r-gray-600 md:w-[40%] md:border-r">
             <div className="h-40 w-40 overflow-hidden rounded-full">
@@ -38,7 +45,7 @@ const About = () => {
             <h2 className="text-[20px] text-[#00BCD4]">Frontend Developer</h2>
             <ul className="mt-8 flex flex-wrap space-x-5 text-5xl">
               <li className="group relative cursor-pointer">
-                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-[#fc815c] p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-[#fc815c] after:content-[""]'>
+                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-amber-300 p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-amber-300 after:content-[""]'>
                   JavaScript
                 </span>
                 <FontAwesomeIcon
@@ -47,19 +54,19 @@ const About = () => {
                 />
               </li>
               <li className="group relative cursor-pointer">
-                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-[#fc815c] p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-[#fc815c] after:content-[""]'>
+                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-[#00d8f1] p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-[#00d8f1] after:content-[""]'>
                   React.JS
                 </span>
                 <FontAwesomeIcon className="text-[#00d8f1]" icon={faReact} />
               </li>
               <li className="group relative cursor-pointer">
-                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-[#fc815c] p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-[#fc815c] after:content-[""]'>
+                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-lime-500 p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-lime-500 after:content-[""]'>
                   Node.JS
                 </span>
                 <FontAwesomeIcon className="text-lime-500" icon={faNodeJs} />
               </li>
               <li className="group relative cursor-pointer">
-                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-[#fc815c] p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-[#fc815c] after:content-[""]'>
+                <span className='absolute top-15 left-1/2 hidden -translate-x-1/2 rounded-2xl bg-[#00d8f1] p-4 text-[14px] font-medium transition-all duration-300 ease-in-out group-hover:-top-18 group-hover:block after:absolute after:-bottom-2 after:left-1/2 after:h-5 after:w-5 after:-translate-x-1/2 after:rotate-45 after:bg-[#00d8f1] after:content-[""]'>
                   Tailwind
                 </span>
                 <svg
