@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import heroImage from "../assets/Hero.png";
 import { Navbar } from "./Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,13 +16,16 @@ import About from "./About";
 export const HeroEffect = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
-  if (isScroll) {
-    window.scrollBy({
-      top: 800,
-      left: 0,
-      behavior: "smooth",
-    });
-  }
+  useEffect(() => {
+    if (isScroll) {
+      window.scrollBy({
+        top: 800,
+        left: 0,
+        behavior: "smooth",
+      });
+      setIsScroll(false);
+    }
+  }, [isScroll]);
   return (
     <>
       <div

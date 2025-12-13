@@ -41,7 +41,7 @@ const ParticleBackground = () => {
       particles: {
         // 🚀 UPDATE 1: More Particles (Increased from 60 to 100)
         number: {
-          value: 130,
+          value: 150,
           density: { enable: true, value_area: 800 },
         },
         color: {
