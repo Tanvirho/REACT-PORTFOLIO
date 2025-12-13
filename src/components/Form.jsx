@@ -4,12 +4,12 @@ import React from "react";
 
 export const Form = () => {
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST" netlify>
       <input
         className="mt-4 w-full rounded-md bg-white p-2 text-[17px] text-black focus:outline-none"
         type="text"
         placeholder="Name"
-        name="Name"
+        name="name"
         required
       />
       <input
