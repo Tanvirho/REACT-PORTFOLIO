@@ -11,7 +11,7 @@ export const ProjectData = [
     subtitle: "(Portfolio)",
     description:
       "Designed and developed the site from scratch. Used a combo of themes and Figma to get the best results. Integrated contact form in the website using Netlify.",
-    Frameworks: ["HTML", "CSS", "JAVASCRIPT", "BOOTSTRAP"],
+    Frameworks: ["HTML", "CSS", "BOOTSTRAP", "JAVASCRIPT"],
     link: "https://tanvir-hossain-shifat.netlify.app/",
   },
   {
