@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import Main from "./components/Main";
+import Main from "./Components/Main";
 
 const App = () => {
   return (

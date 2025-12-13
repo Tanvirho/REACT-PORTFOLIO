@@ -2,7 +2,7 @@ import React from "react";
 import { Hero } from "./Hero";
 import { ProjectSection } from "./ProjectSection";
 import { Connect } from "./Connect";
-import Footer from "./Footer";
+import FooterSection from "./FooterSection";
 
 const Main = () => {
   return (
@@ -10,7 +10,7 @@ const Main = () => {
       <Hero />
       <ProjectSection />
       <Connect />
-      <Footer />
+      <FooterSection />
     </main>
   );
 };
