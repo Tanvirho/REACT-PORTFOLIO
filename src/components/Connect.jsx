@@ -13,7 +13,7 @@ export const Connect = () => {
         </div>
         <div className="mb-5 items-center justify-center md:flex">
           <div className="w-full md:w-[50%]">
-            <img src={contactImage} alt="contact-image" />
+            <img src={contactImage} loading="lazy" alt="contact-image" />
           </div>
           <div className="w-full md:w-[50%]">
             <Form />

@@ -13,7 +13,7 @@ const FooterSection = () => {
       <p className="text-[14px]">
         © {currentYear} Tanvir Hossain. All Reserved.
       </p>
-      <img className="w-30" src={HeroLogo} alt="Logo" />
+      <img className="w-30" src={HeroLogo} loading="lazy" alt="Logo" />
       <ul className="flex flex-wrap justify-center space-x-4 text-2xl text-[#00BCD4]">
         <li>
           <a
