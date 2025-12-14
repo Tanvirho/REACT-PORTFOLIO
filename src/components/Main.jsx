@@ -1,12 +1,13 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Hero } from "./Hero";
 import { ProjectSection } from "./ProjectSection";
 import { Connect } from "./Connect";
 import FooterSection from "./FooterSection";
 
 const Main = () => {
+    lazy(() => import("./About"));
   return (
-    <main className="h-0 rounded-2xl bg-[#20242f] shadow-2xl shadow-gray-900 md:container md:mx-auto md:h-screen">
+    <main>
       <Hero />
       <ProjectSection />
       <Connect />
