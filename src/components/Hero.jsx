@@ -73,17 +73,17 @@ export const Hero = () => {
               </a>
             </li>
             <li>
-              <a href="" target="_blank" className="icon-effect">
+              <a href="https://www.facebook.com/tanvir.hossain.shifat.491031/" target="_blank" className="icon-effect">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </li>
             <li>
-              <a href="" target="_blank" className="icon-effect">
+              <a href="https://t.me/ANONYMOUS20058" target="_blank" className="icon-effect">
                 <FontAwesomeIcon icon={faTelegramPlane} />
               </a>
             </li>
             <li>
-              <a href="" target="_blank" className="icon-effect">
+              <a href="https://github.com/Tanvirho" target="_blank" className="icon-effect">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
