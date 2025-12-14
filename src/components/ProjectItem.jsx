@@ -26,6 +26,7 @@ export const ProjectItem = (props) => {
               {props.title} <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </span>
             <img
+              loading="lazy"
               className="relative mt-3 w-full transition-all duration-300 ease-in-out hover:scale-115"
               src={props.picture}
               alt={props.title}
@@ -41,7 +42,7 @@ export const ProjectItem = (props) => {
           <div className="flex flex-wrap space-x-2 md:space-x-3">
             {props.frameworks.map((framework, i) => (
               <span
-                className="mt-3 rounded-full border border-gray-700 px-3 py-1 text-[10px] md:text-sm shadow-sm"
+                className="mt-3 rounded-full border border-gray-700 px-3 py-1 text-[10px] shadow-sm md:text-sm"
                 key={i}
               >
                 #{framework}
