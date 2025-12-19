@@ -9,7 +9,7 @@ export const Connect = ({ isDark }) => {
         className={`w-full rounded-2xl ${isDark ? "bg-[#191d26]" : "bg-white shadow-2xl"} p-3`}
       >
         <div className="mt-6 mb-15 text-center">
-          <h1 className="relative inline-block border-b-2 border-[#00BCD4]  text-3xl font-medium text-[#00BCD4] md:text-4xl">
+          <h1 className="relative inline-block border-b-2 border-[#00BCD4] text-3xl font-medium text-[#00BCD4] md:text-4xl">
             Get In Touch
           </h1>
         </div>

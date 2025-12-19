@@ -7,7 +7,7 @@ import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTelegramPlane } from "@fortawesome/free-brands-svg-icons/faTelegramPlane";
 
 const FooterSection = () => {
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="mt-10 flex flex-col items-center pb-15">
       <p className="text-[14px]">
