@@ -2,13 +2,14 @@ import React from "react";
 import { ProjectData } from "../assets/ProjectData";
 import { ProjectItem } from "./ProjectItem";
 
-export const Projects = () => {
+export const Projects = ({ isDark }) => {
   return (
     <>
       {ProjectData.map((data) => {
         return (
           <div key={data.id} className="mt-5 md:mt-20 md:p-3">
             <ProjectItem
+              isDark={isDark}
               picture={data.picture}
               title={data.title}
               subtitle={data.subtitle}

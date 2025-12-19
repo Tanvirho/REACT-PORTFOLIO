@@ -42,7 +42,11 @@ export const ProjectItem = (props) => {
           <div className="flex flex-wrap space-x-2 md:space-x-3">
             {props.frameworks.map((framework, i) => (
               <span
-                className="mt-3 rounded-full border border-gray-700 px-3 py-1 text-[10px] shadow-sm md:text-sm"
+                className={`mt-3 rounded-full border px-3 py-1 text-[10px] shadow-sm transition-colors duration-300 md:text-sm ${
+                  props.isDark
+                      ? "border-gray-700 bg-gray-800/50 text-gray-300"
+                      : "border-gray-300 bg-gray-50 text-gray-600"
+                }`}
                 key={i}
               >
                 #{framework}

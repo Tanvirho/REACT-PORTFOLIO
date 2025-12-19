@@ -4,17 +4,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faFile,
+  faMoon,
   faPhone,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
 import Resume from "../assets/Tanvir Hossain Shifat.pdf";
 
-export const Navbar = () => {
+export const Navbar = ({ isDark, setIsDark }) => {
   return (
     <nav className="flex items-center justify-between">
       <img className="mt-2 ml-3 w-20" src={Logo} alt="Logo" />
       <div className="mr-4 text-end">
-        <ul className="flex space-x-7 text-[20px]">
+        <ul className="flex space-x-5 text-[18px] text-white md:space-x-7 md:text-[20px]">
           <li className="group relative">
             <a href="tel:01981888734" target="_blank">
               <FontAwesomeIcon
@@ -48,10 +49,14 @@ export const Navbar = () => {
               Resume
             </span>
           </li>
-          <li className="">
+          <li>
             <FontAwesomeIcon
-              className="cursor-pointer text-[18px] hover:text-[#00BCD4]"
-              icon={faSun}
+              className="cursor-pointer hover:text-[#00BCD4]"
+              icon={isDark ? faSun : faMoon}
+              onClick={() => {
+                setIsDark(!isDark);
+                localStorage.setItem("isDarkMode", !isDark);
+              }}
             />
           </li>
         </ul>

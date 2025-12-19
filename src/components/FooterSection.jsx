@@ -11,7 +11,7 @@ const FooterSection = () => {
   return (
     <footer className="mt-10 flex flex-col items-center pb-15">
       <p className="text-[14px]">
-        © {currentYear} Tanvir Hossain. All Reserved.
+        © {currentYear} Tanvir Hossain. All Rights Reserved.
       </p>
       <img className="w-30" src={HeroLogo} loading="lazy" alt="Logo" />
       <ul className="flex flex-wrap justify-center space-x-4 text-2xl text-[#00BCD4]">

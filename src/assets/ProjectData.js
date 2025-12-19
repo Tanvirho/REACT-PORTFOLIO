@@ -50,6 +50,7 @@ export const skills = [
   "HTML",
   "CSS",
   "REACT",
+  "REDUX",
   "FIGMA",
   "GIT",
   "CANVA",

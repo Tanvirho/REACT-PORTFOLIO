@@ -1,11 +1,11 @@
 import React, { Suspense } from "react";
-import Main from "./components/Main";
+import Outlet from "./components/Outlet";
 
 const App = () => {
   return (
     <>
       <Suspense>
-        <Main />
+        <Outlet />
       </Suspense>
     </>
   );
