@@ -2,6 +2,7 @@ import pic_1 from "./11-1.png";
 import pic_2 from "./22-1.png";
 import pic_3 from "./33-1.png";
 import pic_4 from "./44-1.png";
+import pic_5 from "./55-1.png";
 
 export const ProjectData = [
   {
@@ -44,6 +45,16 @@ export const ProjectData = [
     Frameworks: ["HTML", "CSS", "REACT", "TAILWIND", "JAVASCRIPT"],
     link: "https://working-with-forms-in-react.netlify.app/",
   },
+  {
+    id: 5,
+    picture: pic_5,
+    title: "Unix Timestamp",
+    subtitle: "(Utility)",
+    description:
+      "This is a high-performance, responsive, and minimalist web utility designed for developers to convert Unix timestamps into human-readable dates and vice-versa. It features a modern Dark Mode UI with real-time updates.",
+    Frameworks: ["HTML", "CSS", "JAVASCRIPT"],
+    link: "https://unixtimestampepochx.netlify.app/",
+  },
 ];
 
 export const skills = [
@@ -53,6 +64,8 @@ export const skills = [
   "REDUX",
   "FIGMA",
   "GIT",
+  "C/C++",
+  "JAVA",
   "CANVA",
   "GITHUB",
   "TERMINAL",

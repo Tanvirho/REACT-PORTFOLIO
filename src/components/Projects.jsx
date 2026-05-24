@@ -3,9 +3,10 @@ import { ProjectData } from "../assets/ProjectData";
 import { ProjectItem } from "./ProjectItem";
 
 export const Projects = ({ isDark }) => {
+  const reversedData = [...ProjectData].reverse();
   return (
     <>
-      {ProjectData.map((data) => {
+      {reversedData.map((data) => {
         return (
           <div key={data.id} className="mt-5 md:mt-20 md:p-3">
             <ProjectItem
